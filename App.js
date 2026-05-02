@@ -16,19 +16,19 @@ import {
 
 // ─── WARNA & TEMA ───────────────────────────────────────────────────────────
 const COLORS = {
-  bg: '#0F0F1A',
-  surface: '#1A1A2E',
-  card: '#16213E',
-  cardBorder: '#1E2D5A',
-  accent: '#E94560',
-  accentSoft: '#FF6B6B',
+  bg: '#e2e2e2ff',
+  surface: '#3B1E54',
+  card: '#D4BEE4',
+  cardBorder: '#585858ff',
+  accent: '#D4BEE4',
+  accentSoft: '#9B7EBD',
   gold: '#FFD93D',
   teal: '#4ECDC4',
-  text: '#F0F0F0',
+  text: '#000000ff',
   textSub: '#8892B0',
   textMuted: '#4A5568',
-  done: '#2D3748',
-  doneBorder: '#1A202C',
+  done: '#3B1E54',
+  doneBorder: '#000000ff',
   doneText: '#4A5568',
   HIGH: '#E94560',
   MED: '#FFD93D',
@@ -121,7 +121,7 @@ function TaskCard({ task, onDelete, onToggle }) {
           </View>
           {isDone && (
             <View style={styles.doneBadge}>
-              <Text style={styles.doneBadgeText}>✅ Selesai</Text>
+              <Text style={styles.doneBadgeText}>Selesai</Text>
             </View>
           )}
           <Text style={styles.taskTime}>{task.time}</Text>
@@ -134,8 +134,8 @@ function TaskCard({ task, onDelete, onToggle }) {
 // ─── EMPTY STATE ─────────────────────────────────────────────────────────────
 function EmptyState({ filter }) {
   const messages = {
-    SEMUA: { emoji: '🚀', title: 'Belum ada task!', sub: 'Tambahin task pertama lo sekarang.' },
-    AKTIF: { emoji: '✨', title: 'Semua beres!', sub: 'Nggak ada task aktif. Lo keren banget!' },
+    SEMUA: { emoji: '🚀', title: 'Belum ada task!', sub: 'Tambahin task pertama anda sekarang.' },
+    AKTIF: { emoji: '✨', title: 'All done!', sub: "Nggak ada task aktif.  you're crazy!" },
     SELESAI: { emoji: '🎯', title: 'Belum ada yang selesai', sub: 'Ceklis taskmu dan liat hasilnya di sini.' },
   };
   const msg = messages[filter];
@@ -154,7 +154,7 @@ export default function App() {
   const [tasks, setTasks] = useState([
     {
       id: '1',
-      text: 'Ngerjain tugas MyTaskList App 🔥',
+      text: 'Ngerjain tugas pemrograman mobile',
       done: false,
       priority: 'TINGGI',
       time: '08:30',
@@ -168,8 +168,8 @@ export default function App() {
     },
     {
       id: '3',
-      text: 'Makan siang & istirahat',
-      done: false,
+      text: 'eat and sleep',
+      done: true,
       priority: 'RENDAH',
       time: '12:00',
     },
@@ -234,8 +234,8 @@ export default function App() {
       {/* ── HEADER ── */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.headerSub}>Yo, selamat datang 👋</Text>
-          <Text style={styles.headerTitle}>MyTaskList</Text>
+          <Text style={styles.headerSub}>Welcome, ready to start your day?</Text>
+          <Text style={styles.headerTitle}>My Task</Text>
         </View>
         <View style={styles.headerBadgeWrap}>
           <View style={styles.headerBadge}>
