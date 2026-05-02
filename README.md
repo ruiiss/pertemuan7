@@ -60,18 +60,11 @@
 
 ## 📸 Screenshot
 
-> ⚠️ **WAJIB:** Ganti bagian ini dengan screenshot asli dari HP fisik lo!
-
-```
-[Tambahkan screenshot di sini]
-
-Cara: Setelah app jalan di HP, screenshot lalu upload ke folder /assets/screenshots/
-kemudian referensikan di sini dengan:
 
 ![Home Screen](https://i.imgur.com/6Po3oi7.jpeg)
 ![Aktif](https://i.imgur.com/ZshUVyT.jpeg)
 ![Selesai](https://i.imgur.com/xj4kPHi.jpeg)
-```
+
 
 ---
 
