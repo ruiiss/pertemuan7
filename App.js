@@ -16,7 +16,7 @@ import {
 
 // ─── WARNA & TEMA ───────────────────────────────────────────────────────────
 const COLORS = {
-  bg: '#e2e2e2ff',
+  bg: '#ffffffff',
   surface: '#3B1E54',
   card: '#D4BEE4',
   cardBorder: '#585858ff',
@@ -234,7 +234,7 @@ export default function App() {
       {/* ── HEADER ── */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.headerSub}>Welcome, ready to start your day?</Text>
+          <Text style={styles.headerSub}>Hello there, ready to start your day?</Text>
           <Text style={styles.headerTitle}>My Task</Text>
         </View>
         <View style={styles.headerBadgeWrap}>
